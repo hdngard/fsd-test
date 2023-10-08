@@ -7,12 +7,16 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-    "esModuleInterop": true, //вместо commonJs(require) позволяет использовать import & export
-    "allowSyntheticDefaultImports": true //вместо import * as 'something'
+    "esModuleInterop": true,
+    //вместо commonJs(require) позволяет использовать import & export
+    "allowSyntheticDefaultImports": true
+    //вместо import * as 'something'
   },
+  "include": ["src/**/*.ts", "global.d.ts"],
   "ts-node": {
     "compilerOptions": {
-      "module": "CommonJS" // чтоб заработали импорты
+      "module": "CommonJS",
+      // чтоб заработали импорты
     }
   }
 }
